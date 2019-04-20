@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       body {
         font-family: 'Helvetica';
@@ -44,8 +45,19 @@
         font-family: 'Helvetica';
         padding: 5px;
         font-weight: bold;
-          font-size: 17px;
         border: solid 1px;
+      }
+
+      @media screen and (min-width: 601px) {
+        #dark-mode {
+          font-size: 20px;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        #dark-mode {
+          font-size: 40px;
+        }
       }
 
       #dark-mode:focus {
