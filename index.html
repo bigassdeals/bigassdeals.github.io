@@ -37,6 +37,20 @@
         margin: auto;
       }
 
+      #dark-mode {
+        bottom: 5px;
+        left: 5px;
+        position: absolute;
+        font-family: 'Helvetica';
+        padding: 5px;
+        font-weight: bold;
+        border: solid 1px;
+      }
+
+      #dark-mode:focus {
+        outline: 0;
+      }
+
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138668511-1"></script>
@@ -47,8 +61,12 @@
 
       gtag('config', 'UA-138668511-1');
     </script>
+  <script src='darkmode.js'></script>
   </head>
   <body>
+    <button id='dark-mode' value='dark' onclick='onDarkModeClick(event)'>
+      Dark Mode
+    </button>
     <p class='big-ass-title'>BIGASS.DEALS</p>
     <p class='why-we-do-it'>Every day my friend and I find at least 50 items for at most $35</p>
     <br>
