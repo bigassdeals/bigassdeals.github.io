@@ -1,3 +1,5 @@
+const PRODUCT_DATA_URL = 'https://s3.amazonaws.com/bigassdeals-product-info/product.json';
+
 function loadProduct() {
   const xhttp = new XMLHttpRequest();
 
@@ -7,7 +9,7 @@ function loadProduct() {
     }
   };
 
-  xhttp.open('GET', 'product.json', true);
+  xhttp.open('GET', PRODUCT_DATA_URL, true);
   xhttp.send();
 }
 
