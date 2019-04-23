@@ -26,11 +26,7 @@
         font-size: 5vw;
       }
 
-      a.deal-title:link, a.deal-title:visited {
-        color: #03539C;
-      }
-
-      img.deal-pic {
+      #deal-pic {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -79,6 +75,7 @@
       gtag('config', 'UA-138668511-1');
     </script>
   <script src='darkmode.js'></script>
+  <script src='product.js'></script>
   </head>
   <body>
     <button id='dark-mode' value='dark' onclick='onDarkModeClick(event)'>
@@ -88,8 +85,9 @@
     <p class='why-we-do-it'>Every day my friend and I find at least 50 items for at most $35</p>
     <br>
     <p class='less-big-subtitle'>Today's deal is:</p>
-    <img class='deal-pic' src='https://images-na.ssl-images-amazon.com/images/I/81cNAEKVoGL._SL1500_.jpg'/>
-    <p class='less-big-subtitle'><a class='deal-title' href='https://amzn.to/2VgI5K3'>2000 Sweetener Packets for $24.68</a></p>
+    <img id='deal-pic'/>
+    <p class='less-big-subtitle'><a id='deal-link' href=''></a></p>
+    <script>loadProduct()</script>
     <script>loadStyleModeFromCookie()</script>
   </body>
 </html>
